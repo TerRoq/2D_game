@@ -1,0 +1,102 @@
+[gd_scene load_steps=3 format=3 uid="uid://684cexwnee6c"]
+
+[ext_resource type="Script" path="res://scence/world/Menu/main.gd" id="1_mc032"]
+[ext_resource type="Texture2D" uid="uid://3kchk4ke0b0x" path="res://Sprite/Background/Brown.png" id="2_sqc6q"]
+
+[node name="main" type="CanvasLayer"]
+script = ExtResource("1_mc032")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -57.0
+offset_top = -4.0
+offset_right = 10.0
+offset_bottom = -684.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+alignment = 1
+
+[node name="Options" type="Button" parent="VBoxContainer"]
+layout_direction = 1
+layout_mode = 2
+text = "options"
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 4
+text = "start"
+icon_alignment = 1
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Brown" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(210, 874)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+
+[node name="Brown2" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(746, 874)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+
+[node name="Brown3" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(1286, 874)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+
+[node name="Brown4" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(1826, 874)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+
+[node name="Brown5" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(210, 402)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+flip_v = true
+
+[node name="Brown6" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(746, 402)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+flip_v = true
+
+[node name="Brown7" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(1286, 402)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+flip_v = true
+
+[node name="Brown8" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(1826, 402)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+flip_v = true
+
+[node name="Brown9" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(210, -86.0001)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+
+[node name="Brown10" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(746, -86.0001)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+
+[node name="Brown11" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(1286, -86.0001)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(1826, -86.0001)
+scale = Vector2(8.4375, 7.625)
+texture = ExtResource("2_sqc6q")
+
+[connection signal="focus_entered" from="VBoxContainer/Options" to="." method="_on_options_focus_entered"]
+[connection signal="focus_entered" from="VBoxContainer/Start" to="." method="_on_button_focus_entered"]

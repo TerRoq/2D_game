@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqakulnsjwah6"]
+
+[ext_resource type="Texture2D" uid="uid://c1n0dclplg0ti" path="res://Sprite/Background/sky.webp" id="1_e3645"]
+
+[node name="Background" type="CanvasLayer"]
+
+[node name="Sky" type="Sprite2D" parent="."]
+position = Vector2(966, 543)
+scale = Vector2(1, 2.2)
+texture = ExtResource("1_e3645")
